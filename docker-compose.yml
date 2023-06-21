@@ -7,3 +7,9 @@ services:
     working_dir: /app
     volumes:
       - ./BackendSpringBoot:/app
+  frontendangularjs:
+    image: denniseckler/frontendangularjs
+    ports:
+      - "4200:4200"
+    volumes:
+      - ./FrontendAngularJS:/app
